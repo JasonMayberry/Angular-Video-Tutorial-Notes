@@ -58,38 +58,38 @@ or
 ### cd src/app
 ### mkdir services
 ### cd ../..
-### ng g service services/data
-Everything is done audomaticly except adding it to the
-app.module.ts file. We have to do that manualy by adding:
-***import { DataService } from './services/data.service';***
-And then we just need to report it as a provider.
-Remember services are providers!
-***providers: [DataService]***
+### ng g service services/data  
+Everything is done audomaticly except adding it to the  
+app.module.ts file. We have to do that manualy by adding:  
+***import { DataService } from './services/data.service';***  
+And then we just need to report it as a provider.  
+Remember services are providers!  
+***providers: [DataService]***  
 
-Then we need to import it into the user/user.component.ts file:
-***import { DataService } from '../../services/data.service';***
-Whenever you want a service you have to inject it as a dependency 
-and that goes into the Constructor parameters right here so we're
-going to set this as a private data service.
-`***constructor(private dataService:DataService) {***  `
- ` ***console.log('constructor ran...')***  `
-`***}***  `
+Then we need to import it into the user/user.component.ts file:  
+***import { DataService } from '../../services/data.service';***  
+Whenever you want a service you have to inject it as a dependency  
+and that goes into the Constructor parameters right here so we're  
+going to set this as a private data service.  
+`***constructor(private dataService:DataService) {***  `  
+ ` ***console.log('constructor ran...')***  `  
+`***}***  `  
 Now open the services/data.service.ts file and add this to its constructor:  
-  `***constructor() {***  `
-  `	***console.log('Data Service Connected');***  `
- ` ***}***  `
-`***}*** ` 
-If everything is correct you will see “Data Service Connected” 
-in the console.
+  `***constructor() {***  `  
+  `	***console.log('Data Service Connected');***  `  
+ ` ***}***  `  
+`***}*** `   
+If everything is correct you will see “Data Service Connected”  
+in the console.  
 
-# Much of writing Angular apps is just this:
+# Much of writing Angular apps is just this:  
 1. Split your app into components
 2. Create the views
 3. Define your models
 4. Display your models
 5. Add interaction
 
-From here we just have to learn the 
+From here we just have to learn the  
 syntax and functionality of Angular.
 
 

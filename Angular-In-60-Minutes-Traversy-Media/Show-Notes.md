@@ -1,4 +1,6 @@
 # Starting an Angular from scratch
+## Angular In 60 Minutes  https://www.youtube.com/watch?v=KhzGSHNhnbI
+### By Traversy Media www.traversymedia.com  
 
 If the Angular CLI is not already instaled, install it with:
 ### npm install -g @angular/cli
@@ -69,14 +71,14 @@ Then we need to import it into the user/user.component.ts file:
 Whenever you want a service you have to inject it as a dependency 
 and that goes into the Constructor parameters right here so we're
 going to set this as a private data service.
-***constructor(private dataService:DataService) {***
-  ***console.log('constructor ran...')***
-***}***
-Now open the services/data.service.ts file and add this to its constructor:
-  ***constructor() {***
-  	***console.log('Data Service Connected');***
-  ***}***
-***}***
+`***constructor(private dataService:DataService) {***  `
+ ` ***console.log('constructor ran...')***  `
+`***}***  `
+Now open the services/data.service.ts file and add this to its constructor:  
+  `***constructor() {***  `
+  `	***console.log('Data Service Connected');***  `
+ ` ***}***  `
+`***}*** ` 
 If everything is correct you will see “Data Service Connected” 
 in the console.
 
